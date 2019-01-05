@@ -76,6 +76,15 @@
         max-width:600px;
         padding:10px;
       }
+      warning{
+        display:block;
+        margin: 0px auto;
+        margin-top:20px;
+        text-align:center;
+        max-width:600px;
+        padding:10px;
+        font-size:14px;
+      }
       .block{
   			border-radius: 9px;
   			background:rgb(70,70,70);
@@ -243,6 +252,44 @@
       	border: 0px solid #4D9BD6 !important;
   			font-weight: 600;
       }
+      .message_error,
+  		.message_warning,
+  		.message_good,
+  		.message_normal,
+  		.message_grey{
+  			border-radius: 9px;
+  			padding: 10px;
+  			border: 0px;
+  			max-width: 1000px;
+  			font-weight: 600;
+  			margin: 0px auto;
+  			color:#ffffff;
+  			margin-top: 0px;
+  			margin-bottom:0px;
+  			text-align:center;
+  		}
+  		.message_error strong,
+  		.message_warning strong,
+  		.message_good strong,
+  		.message_normal strong,
+  		.message_grey strong{
+  			text-decoration: underline;
+  		}
+  		.message_good {
+  			background: rgb(46, 204, 113);
+  		}
+  		.message_error {
+  			background: #e74c3c;
+  		}
+  		.message_warning {
+  			background: #f1c40f;
+  		}
+  		.message_normal {
+  			background: rgb(34, 130, 248);
+  		}
+  		.message_grey {
+  			background: rgb(240,240,240);
+  		}
     </style>
   </head>
   <body>
@@ -250,6 +297,6 @@
     <content>
       <p>Some info</p>
     </content>
-    <credits>Project by Anthony Rossbach on <a href='https://twitter.com/anthonyrossbach'>Twitter</a>, <a href='https://nodehost.cloud/community/view_profile?user=anthony'>NodeHost</a>, and <a href='https://github.com/anthonyrossbach'>Github</a>.</credits>
+    <credits>Project by Anthony Rossbach on <a href='https://twitter.com/anthonyrossbach'>Twitter</a>, <a href='https://nodehost.cloud/community/view_profile?user=anthony'>NodeHost</a>, and <a href='https://github.com/anthonyrossbach'>Github</a>.</credits><warning>Your use of this script is at your sole risk. All code is provided "as -is", without any warranty, whether express or implied, of its accuracy, completeness. Further, I shall not be liable for any damages you may sustain by using this script, whether direct, indirect, special, incidental or consequential.</warning>
   </body>
 </html>
